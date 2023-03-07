@@ -16,7 +16,11 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "assets"
+  ],
+  
   "references": [{ "path": "./tsconfig.node.json" }],
     "target": "es6",
     "module": "esnext",

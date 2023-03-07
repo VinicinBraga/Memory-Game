@@ -1,21 +1,22 @@
-import React from 'react';
+import './Card.css'
+import ReactSvg from './src/assets/react.svg';
 
-type Props = {
-  value: string;
-  index: number;
-  onClick: (index: number) => void;
+type CardProps = {
+  value: number;
+  onClick: () => void;
 };
 
-const Card: React.FC<Props> = ({ value, index, onClick }) => {
-  const handleClick = () => {
-    onClick(index);
-  };
-
+function Card({ value, onClick }: CardProps) {
   return (
-    <div className="card" onClick={handleClick}>
-      <div className="card-content">{value}</div>
+    <div className="card" onClick={onClick}>
+      <div className="card-front">
+        <img src={ReactSvg} alt='image'></img>
+      </div>
+      <div className="card-back">
+        {value}
+      </div>
     </div>
   );
-};
+}
 
 export default Card;

@@ -1,20 +1,12 @@
-import React, { useState } from 'react';
-import './App.css';
-import Board from './components/Board';
-
-const cards = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
+import Game from './components/Game';
+import './App.css'
 
 function App() {
-  const [selectedCards, setSelectedCards] = useState<number[]>([]);
-
-  function handleCardClick(index: number) {
-    setSelectedCards((prevSelectedCards) => [...prevSelectedCards, index]);
-  }
 
   return (
-    <div className="App">
-      <h1>Memory Game</h1>
-      <Board cards={cards} onCardClick={handleCardClick} />
+    <div className='app-header'>
+      <h1 className='app-link'>Jogo da Memória</h1> 
+      <Game />
     </div>
   );
 }
