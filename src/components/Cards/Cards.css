@@ -3,7 +3,7 @@
   font-size:larger;
   margin-top: 2%;
   height: 80vh;
-  width: 45vw;
+  width: 40vw;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -11,7 +11,8 @@
 @media (max-width: 768px) {
   .cards-container{
     font-size:small;
-    margin-top: 6%;
-    width: 80vw;
+    margin-top: 15%;
+    height: 55vh;
+    width: 85vw;
   }
 }
