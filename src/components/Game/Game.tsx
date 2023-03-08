@@ -1,10 +1,12 @@
 import React from 'react'
-import Cards from './Cards/Cards'
+import Cards from '../Cards/Cards'
+
 
 const Game = () => {
   return (
     <div>
       <Cards />
+      
     </div>
   )
 }
