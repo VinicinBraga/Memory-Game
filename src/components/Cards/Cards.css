@@ -11,8 +11,8 @@
 @media (max-width: 768px) {
   .cards-container{
     font-size:small;
-    margin-top: 15%;
+    margin-top: 5%;
     height: 55vh;
-    width: 85vw;
+    width: 95vw;
   }
 }

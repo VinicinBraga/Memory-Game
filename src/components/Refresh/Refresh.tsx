@@ -1,3 +1,5 @@
+import './Refresh.css'
+
 const Refresh = (): JSX.Element => {
 
   function refreshPage() {
@@ -5,13 +7,13 @@ const Refresh = (): JSX.Element => {
   }
   
   return (
-  <div>
-  <button onClick={refreshPage}>Click to reload!</button>
-  </div>
+    <div className='container'>
+      <button className="button" onClick={refreshPage}>Reload</button>
+    </div>
   );
-  }
+}
   
-  export default Refresh;
+export default Refresh;
   
   
   
