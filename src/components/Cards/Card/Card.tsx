@@ -7,7 +7,7 @@ interface CardProps {
   num: number;
 }
 
-const Card: React.FC<CardProps> = ({ num, setNumerosArray, numerosArray }) => {
+const Card: React.FC<CardProps> = ({ setNumerosArray, num, numerosArray }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [showFront, setShowFront] = useState(true);
   const [numero, setNumero] = useState<number>(num);
@@ -15,15 +15,13 @@ const Card: React.FC<CardProps> = ({ num, setNumerosArray, numerosArray }) => {
   const backClass = showFront ? 'card-back card-hidden card-show' : 'card-back';
 
   let flippedClass = isFlipped ? 'card-flipped' : '';
-  
+
   const handleClick = () => {
     setIsFlipped(!isFlipped);
     setShowFront(!showFront);
     setNumero(num)
     setNumerosArray([...numerosArray, numero]);
   };
-
- 
 
   return (
     <div className={`card ${flippedClass} `} onClick={handleClick}>

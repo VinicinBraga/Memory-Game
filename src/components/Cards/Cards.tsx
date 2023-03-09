@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState,   } from 'react';
 import Card from './Card/Card';
 import './Cards.css'
-
 
 const shuffle = (array: any[]) => {
   let currentIndex = array.length,randomIndex;
@@ -12,18 +11,14 @@ const shuffle = (array: any[]) => {
     [array[currentIndex], array[randomIndex]] = [
       array[randomIndex], array[currentIndex]];
   }
-
   return array;
 }
 
 const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const shuffledNumbers = shuffle(numbers);
 
-
-
 const Cards: React.FC = () => {
-  const [numerosArray, setNumerosArray] = useState<number[]>([]);
-    console.log(numerosArray)
+const [numerosArray, setNumerosArray] = useState<number[]>([]);
 
   return (
     <div className='cards-container'>
