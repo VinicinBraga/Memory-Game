@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Card.css';
 
-import cardImg from '../../../assets/cards-back.png'
-
 interface CardProps {
   setNumerosArray: React.Dispatch<React.SetStateAction<number[]>>;
   numerosArray: number[];
@@ -28,9 +26,9 @@ const Card: React.FC<CardProps> = ({ num, setNumerosArray, numerosArray }) => {
  
 
   return (
-    <div className={`card ${flippedClass}`} onClick={handleClick}>
+    <div className={`card ${flippedClass} `} onClick={handleClick}>
       <div className={frontClass}>
-        <img src={cardImg} alt="card-back" />
+        <div className='card-img'></div>
       </div>
       <div className={backClass}>
          <h1>{num}</h1>

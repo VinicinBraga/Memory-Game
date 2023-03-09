@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1 className='app-title'>Jogo da Memória</h1> 
+      <h1 className='app-title'>MEMORY GAME</h1> 
       <Game />
       <Refresh />
     </div>
