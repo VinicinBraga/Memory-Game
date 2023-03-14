@@ -16,17 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src",
-    "assets"
-  ],
-  
-  "references": [{ "path": "./tsconfig.node.json" }],
-    "target": "es6",
-    "module": "esnext",
-    "jsx": "react",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
