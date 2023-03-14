@@ -1,8 +1,12 @@
+
+import Card from '../../components/Card'
 import './styles.css'
 
 function App() {
-  return (   
-      <p>oi</p>
+  return (
+    <div>
+      <Card flipped={false} />
+    </div>
   )
 }
 

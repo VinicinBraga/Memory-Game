@@ -1,3 +1,9 @@
+:root{
+  --color-primary: #13141f;
+  --color-secondary: crimson;
+  --color-text-light: #ffffff;
+  --color-text-dark: #444444;
+}
 *{
   margin: 0;
   padding: 0;
