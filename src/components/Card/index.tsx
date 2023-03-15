@@ -1,20 +1,25 @@
-
+import { useState } from 'react';
 import './styles.css'
 
 interface CardProps {
-  flipped?: boolean
+  id: string;
+  flipped: boolean;
+  cardContent: number;
 }
 
-function Card({ flipped }: CardProps) {
-  
-  const cardContentClassNames = ['card__content']
-  flipped&& cardContentClassNames.push('card__content--flipped');
-  
+function Card({ flipped: initialFlipped, cardContent, id}: CardProps) {
+  const [flipped, setFlipped] = useState(initialFlipped);
+  const cardContentClassNames = `card__content ${flipped ? 'card__content--flipped' : ''}`;
+
+  const handleCardClick = (id: string) => {
+      setFlipped(!flipped)
+  }
+
   return (
-    <div className="card">
-      <div className={cardContentClassNames.join(' ')}>
+    <div className="card" onClick={() => handleCardClick(id)}>
+      <div className={cardContentClassNames}>
         <div className="card__face card__face--front">Front</div>
-        <div className="card__face card__face--back">Back</div>
+        <div className="card__face card__face--back">{cardContent}</div>
       </div>
     </div>
   )
