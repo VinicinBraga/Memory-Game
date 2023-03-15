@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './styles.css'
 
-interface CardProps {
+export interface CardProps {
   id: string;
-  flipped: boolean;
-  cardContent: number;
+  flipped?: boolean;
+  cardContent: string;
 }
 
 function Card({ flipped: initialFlipped, cardContent, id}: CardProps) {

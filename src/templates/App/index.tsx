@@ -5,7 +5,7 @@ import './styles.css'
 function App() {
   return (
     <div>
-      <Card flipped={false} cardContent={1} id='1' />
+      <Card flipped={false} cardContent='1' id='1' />
  
     </div>
   )
