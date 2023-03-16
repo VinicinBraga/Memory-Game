@@ -1,5 +1,5 @@
 import { CardProps } from '../components/Card';
-import { cards } from '../data/cards';
+
 
 const keyGen = (): string => {
   return (
@@ -25,5 +25,3 @@ export const duplicateRegenerateSortArray = (
 ): CardProps[] => {
   return sortArray(regenerateCard(duplicateArray(cards)));
 };
-
-console.log(duplicateRegenerateSortArray(cards));

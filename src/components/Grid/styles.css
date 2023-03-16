@@ -1,0 +1,23 @@
+.grid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50vw;
+  height: 75vh;
+}
+
+@media (max-width: 700px), handheld and (orientation: landscape) {
+  .grid{
+    display: flex;
+  }
+  .grid__container{
+    width: 95vw;
+    height: 70vh;
+  }
+}

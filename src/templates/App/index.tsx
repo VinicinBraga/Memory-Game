@@ -1,13 +1,16 @@
 
 import Card from '../../components/Card'
+import Grid from '../../components/Grid'
 import './styles.css'
+import { cards } from '../../data/cards';
+
+
 
 function App() {
   return (
-    <div>
-      <Card flipped={false} cardContent='1' id='1' />
- 
-    </div>
+    <div className="app">
+        <Grid cards={cards} />
+   </div>
   )
 }
 

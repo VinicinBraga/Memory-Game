@@ -1,4 +1,4 @@
- export const cards = [
+export const cards = [
   {
     id: '1',
     cardContent: '1'
@@ -37,6 +37,38 @@
   },
   {
     id: '10',
-    cardContent: '10'
+    cardContent: '1'
   },
+  {
+    id: '11',
+    cardContent: '2'
+  },
+  {
+    id: '12',
+    cardContent: '3'
+  },
+  {
+    id: '13',
+    cardContent: '4'
+  },
+  {
+    id: '14',
+    cardContent: '5'
+  },
+  {
+    id: '15',
+    cardContent: '6'
+  },
+  {
+    id: '16',
+    cardContent: '7'
+  },
+  {
+    id: '17',
+    cardContent: '8'
+  },
+  {
+    id: '18',
+    cardContent: '9'
+  },  
 ]
