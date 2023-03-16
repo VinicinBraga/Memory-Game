@@ -5,16 +5,20 @@ export interface CardProps {
   id: string;
   flipped?: boolean;
   cardContent: string;
+  handleClick?: (id: string) => void;
 }
 
-function Card({ flipped: initialFlipped, cardContent, id}: CardProps) {
-  const [flipped, setFlipped] = useState(initialFlipped);
+function Card({ flipped = false, cardContent, handleClick, id }: CardProps) {
+  const [isflipped, setIsFlipped] = useState(false);
   const cardContentClassNames = `card__content ${flipped ? 'card__content--flipped' : ''}`;
 
   const handleCardClick = (id: string) => {
-      setFlipped(!flipped)
+    if (handleClick) {
+      handleClick(id)
+    }
+    setIsFlipped(!isflipped)
   }
-
+  
   return (
     <div className="card" onClick={() => handleCardClick(id)}>
       <div className={cardContentClassNames}>

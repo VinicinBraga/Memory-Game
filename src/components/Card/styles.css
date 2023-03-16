@@ -15,6 +15,7 @@ body{
   transition: transform 800ms ease-in-out;
   margin: 1vw;
   border: rgb(255, 0, 221) 1px solid;
+  cursor: pointer;
 }
 
 .card__content--flipped{
