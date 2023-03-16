@@ -37,38 +37,38 @@ export const cards = [
   },
   {
     id: '10',
-    cardContent: '1'
+    cardContent: '10'
   },
   {
     id: '11',
-    cardContent: '2'
+    cardContent: '11'
   },
   {
     id: '12',
-    cardContent: '3'
+    cardContent: '12'
   },
   {
     id: '13',
-    cardContent: '4'
+    cardContent: '13'
   },
   {
     id: '14',
-    cardContent: '5'
+    cardContent: '14'
   },
   {
     id: '15',
-    cardContent: '6'
+    cardContent: '15  '
   },
-  {
+  {         
     id: '16',
-    cardContent: '7'
+    cardContent: '16'
   },
   {
     id: '17',
-    cardContent: '8'
+    cardContent: '17'
   },
   {
     id: '18',
-    cardContent: '9'
+    cardContent: '18'
   },  
 ]
