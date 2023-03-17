@@ -9,7 +9,8 @@ import { cards } from '../../data/cards';
 function App() {
   return (
     <div className="app">
-        <Grid cards={cards} />
+      <p className="title">MEMORY GAME</p>
+      <Grid cards={cards} />
    </div>
   )
 }

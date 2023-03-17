@@ -1,20 +1,10 @@
-html, body{
-  height: 100%;
-}
-
-body{
-  display: grid;
-  place-items: center;
-}
-
 .card__content{
   position: relative;
   width: 6vw;
   height: 20vh;
   transform-style: preserve-3d;
-  transition: transform 800ms ease-in-out;
-  margin: 1vw;
-  border: rgb(255, 0, 221) 1px solid;
+  transition: transform 250ms ease-in-out;
+  margin: 0.5vw;
   cursor: pointer;
 }
 
@@ -32,11 +22,14 @@ body{
   align-items: center;
   justify-content: center;
   font-size: 4rem;
+  border: solid 0.3vw rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 .card__face--front{
   background: var(--color-primary);
   color: var(--color-text-light);
+  
 }
 
 .card__face--back{
