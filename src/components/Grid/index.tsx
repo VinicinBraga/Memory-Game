@@ -16,8 +16,17 @@ function Grid({ cards }: GridProps) {
   const first = useRef<CardProps | null>(null);
   const second = useRef<CardProps | null>(null);
   const unflip = useRef(false)
-  const [matches, setmatches] = useState(0)
-  const [moves, setmoves] = useState(0)
+  const [matches, setMatches] = useState(0)
+  const [moves, setMoves] = useState(0)
+
+  const handleReset = () => {
+    setStateCards(duplicateRegenerateSortArray(cards));
+    first.current = null;
+    second.current = null;
+    unflip.current = false;
+    setMatches(0);
+    setMoves(0);
+  };
 
   const handleClick = (id: string) => {
     const newStateCards = stateCards.map((card) => {
@@ -45,9 +54,11 @@ function Grid({ cards }: GridProps) {
         if (first.current.cardContent === second.current.cardContent) {
           first.current = null;
           second.current = null;
+          setMatches((m) => m + 1);
         } else {
           unflip.current = true;
         }
+        setMoves((m) => m + 1);
       }
 
       return card
@@ -59,7 +70,7 @@ function Grid({ cards }: GridProps) {
     <>
       <div className="score">
         <p>Matches: {matches} | Moves: {moves} </p>
-        <button className="button-82-pushable" role="button">
+        <button className="button-82-pushable" role="button"  onClick={() => handleReset()}>
           <span className="button-82-shadow"></span>
           <span className="button-82-edge"></span>
           <span className="button-82-front text">

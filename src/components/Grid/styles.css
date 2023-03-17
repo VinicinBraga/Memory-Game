@@ -19,7 +19,7 @@
   align-items: flex-start;
   justify-content: space-between;
   color: white;
-  font-size: 2vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -118,6 +118,10 @@
   .grid__container{
     width: 95vw;
     height: 70vh;
+  }
+
+  .score{
+    font-size: 2vh;
   }
 
   .button-82-front{

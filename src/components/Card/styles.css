@@ -22,19 +22,21 @@
   align-items: center;
   justify-content: center;
   font-size: 4rem;
-  border: solid 0.3vw rgb(255, 255, 255);
+  border: solid 0.3vw white;
   border-radius: 10px;
 }
 
 .card__face--front{
-  background: var(--color-primary);
-  color: var(--color-text-light);
-  
+  background-image: url('../../assets/carta.jpg');
+  background-size: cover;
 }
 
 .card__face--back{
-  background: var(--color-secondary);
-  color: var(--color-text-dark);
+  background: white;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 10vh;
   transform: rotateY(180deg);
 }
 
@@ -46,4 +48,8 @@
     width: 12vw;
     height: 10vh;
   }
+  .card__face--back{
+    font-size: 4vh;
+  }
+
 }

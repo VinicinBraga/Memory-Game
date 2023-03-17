@@ -22,7 +22,7 @@ function Card({ flipped = false, cardContent, handleClick, id }: CardProps) {
   return (
     <div className="card" onClick={() => handleCardClick(id)}>
       <div className={cardContentClassNames}>
-        <div className="card__face card__face--front">?</div>
+        <div className="card__face card__face--front"></div>
         <div className="card__face card__face--back">{cardContent}</div>
       </div>
     </div>
