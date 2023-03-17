@@ -46,7 +46,7 @@ function Grid({ cards }: GridProps) {
           first.current = null;
           second.current = null;
         } else {
-          unflip.current = true
+          unflip.current = true;
         }
       }
 
@@ -56,13 +56,19 @@ function Grid({ cards }: GridProps) {
   }
   
   return (
-    <div className="grid">
-      <div className="grid__container">
-        {stateCards.map(card => {
-          return <Card {...card} key={card.id} handleClick={handleClick} />
-        })}
+    <>
+      <div className="score">
+        <p>Matches: {matches} | Moves: {moves} </p>
+        <button>Reset</button>
       </div>
-    </div>
+      <div className="grid">
+        <div className="grid__container">
+          {stateCards.map(card => {
+            return <Card {...card} key={card.id} handleClick={handleClick} />
+          })}
+        </div>
+      </div>
+    </>
   )
 }
 
