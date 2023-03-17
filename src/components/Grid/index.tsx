@@ -59,7 +59,13 @@ function Grid({ cards }: GridProps) {
     <>
       <div className="score">
         <p>Matches: {matches} | Moves: {moves} </p>
-        <button>Reset</button>
+        <button className="button-82-pushable" role="button">
+          <span className="button-82-shadow"></span>
+          <span className="button-82-edge"></span>
+          <span className="button-82-front text">
+           RESET
+          </span>
+        </button>
       </div>
       <div className="grid">
         <div className="grid__container">
