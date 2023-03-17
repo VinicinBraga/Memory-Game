@@ -1,6 +1,6 @@
 .app{
-  background-color: #158dbc ;
-  width: 100svw;
+  background: rgb(118,216,255);
+background: linear-gradient(153deg, rgba(118,216,255,1) 4%, rgba(24,158,210,1) 36%, rgba(8,108,147,1) 64%, rgba(1,72,99,1) 84%);
   height: 100vh;
 }
 
