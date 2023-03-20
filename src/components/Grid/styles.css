@@ -125,6 +125,8 @@
   .score{
     font-size: 2vh;
     margin-top: 2vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
   }
   .button-82-front {
     padding: 1vh 3vw;

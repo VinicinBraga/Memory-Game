@@ -1,42 +1,42 @@
 export const cards = [
   {
     id: '1',
-    cardContent: '1'
+    cardContent: '🐢'
   },
   {
     id: '2',
-    cardContent: '2'
+    cardContent: '🐄'
   },
   {
     id: '3',
-    cardContent: '3'
+    cardContent: '🐖'
   },
   {
     id: '4',
-    cardContent: '4'
+    cardContent: '🐔'
   },
   {
     id: '5',
-    cardContent: '5'
+    cardContent: '🐦'
   },
   {
     id: '6',
-    cardContent: '1'
+    cardContent: '🦁'
   },
   {
     id: '7',
-    cardContent: '2'
+    cardContent: '🧸'
   },
   {
     id: '8',
-    cardContent: '3'
+    cardContent: '🐼'
   },
   {
     id: '9',
-    cardContent: '4'
+    cardContent: '🐒'
   },
   {
     id: '10',
-    cardContent: '5'
+    cardContent: '🐶'
   },
 ]
