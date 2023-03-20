@@ -9,9 +9,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 90vw;
-  height: 75vh;
-  margin-top: 1vh;
+  width: 70vw;
+  height: 50vh;
+  margin-top: 2vh;
 }
 
 .score{
@@ -21,8 +21,9 @@
   color: white;
   font-size: 4vh;
   font-weight: bold;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 10vh;
 }
 
 .button-82-pushable {
@@ -123,6 +124,7 @@
 
   .score{
     font-size: 2vh;
+    margin-top: 2vh;
   }
   .button-82-front {
     padding: 1vh 3vw;
