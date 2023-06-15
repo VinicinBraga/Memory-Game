@@ -16,7 +16,7 @@
 }
 
 .score{
-  width: 70%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,7 +80,7 @@
   font-size: 2vh;
   padding: 2vh 3vw;
   border-radius: 12px;
-  color: rgb(112, 112, 112);
+  color: rgb(54, 54, 54);
   background: hsl(59, 100%, 47%);
   will-change: transform;
   transform: translateY(-6px);
@@ -125,10 +125,14 @@
   }
 
   .score{
+    width: 70%;
+    padding-left: 4svw;
+    background-color: #fff;
     font-size: 2vh;
-    margin-top: 2vh;
+    margin-top: 0vh;
     margin-left: 8vw;
     margin-right: 8vw;
+    border-radius: 15px;
   }
   .button-82-front {
     padding: 1vh 3vw;
