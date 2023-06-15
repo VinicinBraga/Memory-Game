@@ -1,0 +1,28 @@
+.app{
+  border: blue 1px solid ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/fundo1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.logo{
+  width: 20vw;
+}
+
+
+@media (max-width: 700px), handheld and (orientation: landscape) {
+  .title{
+    font-size: 4vh;
+    padding-top: 5vh;
+  }
+  .logo{
+    width: 40vw;
+  }
+  
+}
